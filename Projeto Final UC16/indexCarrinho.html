@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <title>Bordados á Mão T-Shrit</title>
+</head>
+<body onload="slide1()">
+    <header>
+        <p>
+            <h1>
+                CARRINHO DE COMPRAS
+            </h1>
+        </p>
+    </header>
+    <nav>
+        <a href="indexLogar.html">Início</a>
+        <a href="indexRoupa.html">Cadastrar Produto</a>
+        <a href="indexMenu.html">Loja</a>
+        
+    </nav>
+<br>
+    <div id="propaganda2">
+        <img src="imagens/propaganda3.jpeg" alt="slides2" id="slide2"/>
+    </div>
+<br>
+    <main>
+        <section>
+            <article>
+                <div id="itens"></div>
+                <div>Total: <span id="total"></span></div><br>
+                <button type="button" onclick="localStorage.clear(); location.reload();">Limpar Carrinho</button>
+                <br>
+                <br>
+                <button onclick="window.location.href= 'indexMenu.html'">Continuar Comprando</button>
+            </article>
+        </section>
+    </main>
+<br>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Bordados a Mão</h3>
+            <ul>
+                <li><a href="#">Empresa</a></li>
+                <li><a href="#">Como comprar</a></li>
+                <li><a href="#">Envio</a></li>
+                <li><a href="#">Formas de Pagamento</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>ATENDIMENTO</h3>
+            <ul>
+                <li>(62)3088-2588</li>
+                <li>(62)9524-2445</li>
+                <li><a href="mailto:atendimento@bordadosamao.com.br">atendimento@bordadosamao.com.br</a></li>
+                <li>Atendimento de segunda a sexta - 7h às 16:30h</li>
+            </ul>
+
+            
+        </div>
+
+       
+
+        <div class="footer-section">
+            <h3>FORMAS DE PAGAMENTO</h3>
+            <ul>
+                <li>Cartão Visa - Vindi</li>
+                <li>Cartão MasterCard - Vindi</li>
+                <li>Cartão Amex - Vindi</li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>COMPRE COM SEGURANÇA</h3>
+            <p>Loja Protegida</p>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>&copy; atendimento@bordadosamao.com.br
+    </div>
+</footer>
+
+<script src="https://www.paypal.com/sdk/js?client-id=AXTUsh_VKLZ6hXjQ500lcaKAOKIQ7CKFM-yohSFecpPlVNIj4Z-S8O3nSG2U3O7dDoB33rxN5YpMJtVb"></script>
+
+    <script src="main4.js"></script>
+    <script src="slides2.js"></script>
+</body>
+</html>

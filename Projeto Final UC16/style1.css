@@ -1,0 +1,120 @@
+body {
+    background-color: #fefefe; /* Alterei a cor de fundo para um tom mais claro */
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #e60073; /* Alterei a cor para um tom de rosa mais suave */
+    padding: 20px;
+    margin: auto;
+    background-color: #fff; /* Fundo branco para destacar o título */
+    border-bottom: 2px solid #f0f0f0;
+}
+
+nav {
+    text-align: center;
+    color: #e60073;
+}
+
+form {
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px; /* Reduzi o raio do border-radius para uma aparência mais suave */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 30px auto; /* Ajustei a margem para um espaçamento mais uniforme */
+}
+
+label {
+    color: #333;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Restante do seu CSS... */
+
+/* Estilos para os campos de entrada (input) */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+    background-color: #f9e6e6;
+    border: 1px solid #e2bcbc;
+    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Estilos para os botões (input submit, input button, button) */
+input[type="submit"],
+input[type="button"],
+button,
+article button {
+    background-color: #e60073;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Efeito hover nos botões */
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+article button:hover {
+    background-color: #ff99b3;
+}
+
+/* Estilos para os formulários (form) e seus títulos (h3) */
+form {
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 30px auto;
+}
+
+h3 {
+    text-align: center;
+    color: #e60073;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+form h3 {
+    font-size: smaller;
+}
+
+/* Restante do seu CSS... */
+
+
+footer {
+    padding: 20px;
+    background-color: #333; /* Cor mais escura para o rodapé */
+    text-align: center;
+    color: #e60073;
+    clear: both;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    display: block; /* Faz com que a imagem seja exibida como um bloco para centralizá-la */
+    margin: 0 auto; /* Configura margens automáticas para centralizar a imagem horizontalmente */
+}
+

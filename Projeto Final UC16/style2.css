@@ -1,0 +1,173 @@
+/* style2.css */
+
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Cor de fundo geral */
+    color: #333; /* Cor do texto principal */
+    min-height: 100vh; /* Garante que o corpo ocupa pelo menos a altura da viewport */
+    position: relative; /* Estabelece um contexto de posicionamento para elementos filhos posicionados absolutamente */
+}
+
+/* Estilos para o cabeçalho da página (header) */
+header {
+    background-color: #333; /* Rosa */
+    color: #fff; /* Branco */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para a barra de navegação (nav) */
+nav {
+    text-align: center;
+}
+
+nav img {
+    width: 350px; /* Ajuste conforme necessário para aumentar o tamanho da logo */
+    height: auto;
+    margin: 30px 10;
+}
+
+/* Estilos para o conteúdo principal da página (main) */
+main {
+    padding: 20px;
+    padding-bottom: 60px; /* Altura do footer */
+    box-sizing: border-box; /* Certifica-se de que o padding não aumenta o tamanho total */
+}
+
+/* Estilos para artigos na página (article) */
+article {
+    background-color: #fff; /* Branco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Adicione uma margem superior para separar do header */
+    text-align: center;
+}
+
+article h3,
+article h5 {
+    color: #333; /* Alterado para cor preta para melhor legibilidade */
+}
+
+/* Estilos para formulários na página (form) */
+form {
+    max-width: 300px;
+    width: 100%;
+    background-color: #ff69b4; /* Rosa */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    color: #fff; /* Branco */
+    margin-bottom: 8px;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fff; /* Branco */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilos para botões no formulário */
+input[type="button"] {
+    background-color: #333; /* Preto */
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* Branco */
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Estilos para efeito hover em botões */
+input[type="button"]:hover {
+    background-color: #555; /* Tom mais escuro de preto */
+}
+
+/* Estilos para links que parecem botões */
+.button-link {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    color: #4b0082; /* Roxo escuro */
+    text-decoration: underline;
+}
+
+/* Estilos para o rodapé da página (footer) */
+footer {
+    background-color: #333;
+    color: #fff; 
+    padding: 20px 0;
+    text-align: center;
+    /* position: fixed; Remova ou substitua esta linha */
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Estilos para a estrutura do rodapé (footer-container) */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Estilos para seções individuais no rodapé (footer-section) */
+.footer-section {
+    width: 200px;
+}
+
+.footer-section h3 {
+    color: #ff69b4; 
+    font-size: 18px; /* Aumenta o tamanho da fonte para chamar mais atenção */
+    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+/* Estilos para ícones sociais (social-icons) */
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #ff69b4;
+}
+
+.social-icons a:hover {
+    color: #555;
+}
+
+/* Estilos para informações de direitos autorais (copyright) */
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}

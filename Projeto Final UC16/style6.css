@@ -1,0 +1,118 @@
+/* style5.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h6 {
+    margin: 0;
+    color: #ff69b4; /* Rosa */
+  }
+  
+  header img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .search-container {
+    margin-top: 10px;
+  }
+  
+  .caixa-de-pesquisa {
+    display: flex;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ff69b4; /* Rosa */
+  }
+  
+  .pesquisa-btn {
+    padding: 8px;
+    background-color: #ff69b4; /* Rosa */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ff69b4; /* Rosa */
+    padding: 10px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    color: #ff69b4; /* Rosa */
+  }
+  
+  form input[type="text"],
+  form input[type="number"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ff69b4; /* Rosa */
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  form input[type="submit"],
+  button {
+    padding: 10px;
+    background-color: #ff69b4; /* Rosa */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover,
+  form input[type="submit"]:hover {
+    background-color: #d34b7e; /* Tom mais escuro de rosa */
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style6.css">
+    <title>Bordados á Mão T-Shrit</title>
+</head>
+<body>
+    <header>
+        <h6>Bordados á Mão <br> T-Shirt</h6>
+        <img src="imagens/bordados.png" alt="Lógotipo">
+
+        <div class="search-container">
+            <div class="caixa-de-pesquisa">
+                <input type="text" class="search-input" placeholder="Pesquisar...">
+                <button class="pesquisa-btn">Pesquisar</button>
+            </div>
+        </div>
+
+        <p><h3>Deletar Produtos</h3></p>
+    </header>
+<br>
+    <nav>
+        <ul>
+            <li>
+                <a href="indexLogar.html">Início</a>
+                <a href="indexRoupa.html">Cadastrar Produto</a>
+                <a href="indexLogar.html">Início</a>
+                <a href="indexCarrinho.html">Carrinho de Compras</a>
+            </li>
+        </ul>
+    </nav>
+<br>
+    
+<br>
+    <main>
+        <section>
+            <article>
+                <p>
+                    <h3>DELETAR PRODUTO</h3>
+                </p>
+                <p>
+                    <h4>
+                        Para poder Deletar o produto do seu Banco de Dados basta preencher as informações <br>
+                            do produto que se pede logo abaixo inserindo o seu código do produto!
+                    </h4>
+                </p>
+            <br>
+                <form action="deletRoupa.php" method="post">
+                    <label for="id_roupa">Digite o ID do produto:</label>
+                    <input type="number" name="id_roupa">
+                    <br><br>
+
+                    <input type="submit" value="Deletar Produto">
+                </form>
+                <br>
+                <button onclick="window.location.href= 'indexMenu'">Voltar</button>
+            </article>
+        </section>
+    </main>
+<footer>
+    &copy; atendimento@bordadosamao.com.br
+</footer>
+<script src="deletRoupa.php"></script>
+</body>
+</html>

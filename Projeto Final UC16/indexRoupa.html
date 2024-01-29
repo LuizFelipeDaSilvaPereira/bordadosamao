@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style5.css">
+    <title>Bordados á Mão T-Shrit</title>
+</head>
+<body>
+    <header>
+        <h6>Bordados á Mão <br> T-Shirt </h6>
+        <img src="imagens/bordados.png" alt="Logótipo">
+
+        <div class="search-container">
+            <div class="caixa-de-pesquisa">
+                <input type="text" class="search-input" placeholder="Pesquisar...">
+                <button class="pesquisa-btn">Pesquisar</button>
+            </div>
+        </div>
+
+        <p><h3>Cadastrar Roupas</h3></p>
+    </header>
+<br>
+    <nav>
+        <ul>
+            <li>
+                <a href="indexLogar.html">Início</a>
+                <a href="indexRoupa.html">Cadastrar Produto</a>
+                <a href="indexLogar.html">Início</a>
+                <a href="indexCarrinho.html">Carrinho de Compras</a>
+        </ul>
+    </nav>
+<br>
+  
+<br>
+    <main>
+        <section>
+            <article>
+                <p>
+                    <h3>ADICIONAR PRODUTOS</h3>
+                </p>
+               <p>
+                    <h4>
+                        Para poder cadastra o produto no seu Banco de Dados basta preencher <br>
+                                 as informações do produto que se pede logo abaixo !
+                    </h4>
+               </p>
+                
+            <br>
+                <form action="addProduto.php" method="post">
+                    <label for="nomeProduto">Nome do Produto: </label>
+                    <input type="text" name="nomeProduto" id="nomeProduto">
+                    <br><br>
+
+                    <label for="tamanho">Tamanho do Produto: </label>
+                    <input type="text" name="tamanho" id="tamanho">
+                    <br><br>
+
+                    <label for="preco">Digite o Preço do Produto: </label>
+                    <input type="number" name="preco" id="preco">
+                    <br><br>
+
+                    <label for="descricao">Descriçoes do Produto: </label>
+                    <textarea name="message" id="descricao" cols="30" rows="10"></textarea>
+                    <br><br>
+
+                    <input type="submit" value="Cadastrar Produto">
+
+                </form>
+                <br>
+                <button onclick="window.location.href= 'indexMenu.html'">Voltar</button>
+            </article>
+        </section>
+    </main>
+<footer>
+    &copy; atendimento@bordadosamao.com.br
+</footer>
+<script src="addProduto.php"></script>
+</body>
+</html>

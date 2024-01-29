@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Bordados á Mão T-Shirt</title>
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+    </header>
+    <nav>
+        <img src="imagens/bordados.png" alt="Logótipo">
+    </nav>
+    <main>
+        <section>
+            <article>
+                <h3>
+                    Falta pouco para ter acesso à nossa loja virtual. Para isso, basta inserir os dados solicitados, <br>
+                    lembrando que a senha deve ser inserida abaixo e a mesma criada no cadastro.
+                </h3>
+                <form>
+                    <label for="loginEmail">E-Mail:</label>
+                    <input type="email" name="loginEmail" id="loginEmail" required>
+                    <br><br>
+                    <label for="loginSenha">Digite a Senha:</label>
+                    <input type="password" name="loginSenha" id="loginSenha" required>
+                    <br><br>
+                    <input type="button" value="Acessar" onclick="validarLogin()">
+                    <br>
+                    <input type="button" value="Ver Cadastro" onclick="verDados()">
+                    <p>
+                        <h5>
+                            Caso não seja cadastrado em nosso site, clique em cadastrar <br>
+                            para ficar por dentro de tudo.
+                        </h5>
+                    </p>
+                    <button class="button-link" onclick="window.location.href= 'indexCadastro.html'">Cadastrar-se</button>                
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Todos os Direitos Reservados !</p>
+    </footer>
+    <script src="main2.js"></script>
+</body>
+</html>

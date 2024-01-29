@@ -1,0 +1,411 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+}
+
+#slide.FadeOut {
+  opacity: 0.2;
+}
+
+#slide {
+  transition: opacity 2s;
+  opacity: 1;
+}
+
+h1 {
+  background-color:  rgb(248, 79, 135); /* Tom de rosa mais forte e escuro */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h3 {
+  background-color: #333; /* Cinza escuro */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+ font-size: larger;
+  
+}
+
+h6{
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: large;
+  
+
+}
+
+article h3 {
+  font-family: 'Cambria', 'Times New Roman', serif;
+  font-size: larger;
+  text-align: center;
+  color:  rgb(248, 79, 135); /* Tom de rosa mais forte e escuro */
+}
+
+header {
+  padding: 15px;
+  background-color:  rgb(248, 79, 135); /* Tom de rosa mais forte e escuro */
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+}
+header img {
+  width:15%; 
+  height: auto;
+}
+
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.search-input {
+  width: 70%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 25px;
+}
+
+.caixa-de-pesquisa {
+  display: flex;
+  align-items: center;
+  margin-top: -150px; /* Mover para cima */
+}
+
+.caixa-de-pesquisa input[type="text"] {
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #fff; /* Rosa mais forte */
+  border: none;
+  width: 300px;
+  color: #333; /* Cor do texto branco */
+  font-size: 16px;
+  outline: none;
+}
+
+.caixa-de-pesquisa input[type="text"]::placeholder {
+  color: #333; /* Cor do texto de placeholder branco */
+}
+
+.caixa-de-pesquisa button {
+  background-color: #ff4f87; /* Rosa mais forte */
+  color: #fff; /* Cor do texto branco */
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px; /* Ajuste no padding */
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Adicionando uma transição suave na mudança de cor */
+}
+
+/* Adicionando um estilo de hover para tornar a interação mais amigável */
+.caixa-de-pesquisa button:hover {
+  background-color: #ff3366; /* Rosa mais forte no hover */
+}
+
+.pesquisa-btn {
+  background-color: #ff4f87; 
+  color: #fff; 
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px; 
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 16px; 
+  transition: background-color 0.3s ease; 
+}
+
+.pesquisa-btn:hover {
+  background-color: #ff3366; 
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333; /* Cinza escuro */
+  color: #fff;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: inline;
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color:  rgb(248, 79, 135) /* Tom de rosa mais forte e escuro */
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color:  rgb(248, 79, 135); /* Tom de rosa mais forte e escuro */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color:  rgb(248, 79, 135); /* Tom de rosa mais forte e escuro */
+}
+
+button:active {
+  background-color:  rgb(248, 79, 135); /* Tom de rosa mais forte e escuro */
+}
+
+#carrinho-tab {
+  position: absolute;
+  top: 185px;
+  right: 150px;
+  background-color: rgb(248, 79, 135); /* Tom de rosa mais forte e escuro */
+  color: #fff;
+  padding: 15px;
+  border-radius: 30px;
+  cursor: pointer ;
+  z-index: 1000;
+  display: flex;
+  align-items: center; 
+}
+
+#carrinho-tab img {
+  width: 55px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 20px;
+}
+
+#carrinho-tab:hover {
+  background-color: rgb(248, 79, 135); /* Tom de rosa mais forte e escuro */
+}
+
+#carrinho-tab img {
+  content: url('imagens/carrinho.png'); /* Substitua pelo caminho real da sua imagem */
+}
+
+#carrinho {
+  display: none;
+  position: fixed;
+  top: 80px;
+  right: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 15px;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 400px; /* Adjust the max height as needed */
+  overflow-y: auto; /* Add a scroll when content overflows */
+  
+}
+
+#carrinho h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: rgb(248, 79, 135); /* Tom de rosa mais forte e escuro */
+}
+
+#total-carrinho {
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(248, 79, 135); /* Tom de rosa mais forte e escuro */
+}
+
+/* Add transition for smooth hover effect */
+#carrinho-tab, #carrinho-tab:hover, #carrinho-tab img {
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+
+img {
+  width: 100px;
+  height: 150px;
+}
+
+#produtos {
+  text-align: center;
+  padding: 20px;
+}
+
+#produtos li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e0c2c7; /* Cor mais suave para a borda */
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  background-color: #fce8eb; /* Cor de fundo mais suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(15% - 20px);
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#produtos li:hover {
+  transform: scale(1.05);
+}
+
+#produtos li img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #e0c2c7;
+  object-fit: cover;
+}
+
+#produtos h4 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #ff4f87; /* Cor rosa mais forte para o título */
+}
+
+#produtos span {
+  font-size: 16px;
+  color: #ff4f87;
+  margin-bottom: 10px;
+}
+
+#produtos input {
+  width: 60px;
+  padding: 8px;
+  margin-top: 10px;
+  text-align: center;
+  border: 1px solid #e0c2c7;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#produtos button {
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: #ff4f87;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#produtos button:hover {
+  background-color: #ff3366;
+}
+
+#produtos ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #produtos li {
+    width: 100%;
+  }
+}
+
+
+
+footer {
+  background-color: #333;
+  color: #fff; 
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section {
+  width: 200px;
+}
+
+.footer-section h3 {
+  color: #ff69b4; 
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+a {
+  color: #ff69b4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+#propaganda2 {
+  max-width: 1000px; 
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#propaganda2 img {
+  width: 100%;
+  height: 200%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+#propaganda2 img:hover {
+  transform: scale(1.05);
+}
+
+

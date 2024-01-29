@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Menu dos Produtos</title>
+</head>
+<body onload="slide1()">
+    <header>
+        <h6>Bordados à Mão - T-Shirt</h6>
+        <img src="imagens/bordados.png" alt="Logotipo">
+
+        <div class="search-container">
+            <div class="caixa-de-pesquisa">
+                <input type="text" class="search-input" placeholder="Pesquisar...">
+                <button class="pesquisa-btn">Pesquisar</button>
+            </div>
+        </div>
+
+        <h3>Menu</h3>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="indexLogar.html">Início</a>
+                <a href="indexCadastro.html">Cadastrar-se</a>
+                <a href="indexCarrinho.html">Carrinho de Compras</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="propaganda2">
+        <img src="imagens/propaganda1.jpg" alt="slides" id="slide">
+    </div>
+
+    <main>
+        <section>
+            <article>
+                <h3>PRODUTOS</h3>
+                <br>
+                <div id="produtos">
+                    <ul>
+                        <li>
+                            <span>T-short - Preta Bordada Jesus </span>
+                            <span>R$ 25.90</span>
+                            <img src="imagens/produto1.png" alt="Blusa">
+                            Quantidade: <input type="number" value="1" min="1" max="10" id="qtd1"><br>
+                            <button onclick="adicionarProduto('T-short - Preta Bordada Jesus', 'Código 00001', 25.90, 'imagens/produto1.png')">Comprar</button><br>
+                            <button type="button" id="produto1" onclick="addCarrinho('T-short - Preta Bordada Jesus', document.getElementById('qtd1').value, 25.90, 'imagens/produto1.png', 1)">Adicionar ao Carrinho</button><br>
+                        </li>
+                        <li>
+                            <span>T-short - Preta Bordada Asa dourada</span>
+                            <span>R$ 25.90</span>
+                            <img src="imagens/produto2.jpeg" alt="Blusa">
+                            Quantidade: <input type="number" value="1" min="1" max="10" id="qtd2"><br>
+                            <button onclick="adicionarProduto('T-short - Preta Bordada Asa dourada', 'Código 00002', 25.90, 'imagens/produto2.jpeg')">Comprar</button><br>
+                            <button type="button" id="produto2" onclick="addCarrinho('T-short - Preta Bordada Asa dourada', document.getElementById('qtd2').value, 25.90,'imagens/produto2.jpeg', 2)">Adicionar ao Carrinho</button><br>
+                        </li>
+                        <li>
+                            <span>T-short - Branca Bordada Coração Dourado</span>
+                            <span>R$ 25.90</span>
+                            <img src="imagens/produto3.jpeg" alt="Blusa">
+                            Quantidade: <input type="number" value="1" min="1" max="10" id="qtd3"><br>
+                            <button onclick="adicionarProduto('T-short - Branca Bordada Coração Dourado', 'Código 00003', 25.90, 'imagens/produto3.jpeg')">Comprar</button><br>
+                            <button type="button" id="produto3" onclick="addCarrinho('T-short - Branca Bordada Coração Dourado', document.getElementById('qtd3').value, 25.90, 'imagens/produto3.jpeg', 3)">Adicionar ao Carrinho</button><br>
+                        </li>
+                        <li>
+                            <span>T-short - Azul Bordada Coração</span>
+                            <span>R$ 25.90</span>
+                            <img src="imagens/produto4.jpeg" alt="Blusa">
+                            Quantidade: <input type="number" value="1" min="1" max="10" id="qtd4"><br>
+                            <button onclick="adicionarProduto('T-short - Azul Bordada Coração', 'Código 00004', 25.90, 'imagens/produto4.jpeg')">Comprar</button><br>
+                            <button type="button" id="produto4" onclick="addCarrinho('T-short - Azul Bordada Coração', document.getElementById('qtd4').value, 25.90, 'imagens/produto4.jpeg', 4)">Adicionar ao Carrinho</button><br>
+                        </li>
+                        <li>
+                            <span>T-short - Branca Bordada Com Raizes</span>
+                            <span>R$ 25.90</span>
+                            <img src="imagens/produto5.jpeg" alt="Blusa">
+                            Quantidade: <input type="number" value="1" min="1" max="10" id="qtd5"><br>
+                            <button onclick="adicionarProduto('T-short - Branca Bordada Com Raizes', 'Código 00005', 25.90, 'imagens/produto5.jpeg')">Comprar</button><br>
+                            <button type="button" id="produto5" onclick="addCarrinho('T-short - Branca Bordada Com Raizes', document.getElementById('qtd5').value, 23.90, 'imagens/produto5.jpeg', 5)">Adicionar ao Carrinho</button><br>
+                        </li>
+                        <li>
+                            <span>T-short - Preta Bordada Com Raizes</span>
+                            <span>R$ 25.90</span>
+                            <img src="imagens/produto6.jpeg" alt="Blusa">
+                            Quantidade: <input type="number" value="1" min="1" max="10" id="qtd6"><br>
+                            <button onclick="adicionarProduto('T-short - Preta Bordada Com Raizes', 'Código 00006', 25.90, 'imagens/produto6.jpeg')">Comprar</button><br>
+                            <button type="button" id="produto6" onclick="addCarrinho('T-short - Preta Bordada Com Raizes', document.getElementById('qtd6').value, 25.90, 'imagens/produto6.jpeg', 6)">Adicionar ao Carrinho</button><br>
+                        </li>
+                        <li>
+                            <span>T-short - Branca Bordada Com Borboletas</span>
+                            <span>R$ 25.90</span>
+                            <img src="imagens/produto7.jpeg" alt="Blusa">
+                            Quantidade: <input type="number" value="1" min="1" max="10" id="qtd7"><br>
+                            <button onclick="adicionarProduto('T-short - Branca Bordada Com Borboletas', 'Código 00007', 25.90, 'imagens/produto7.jpeg')">Comprar</button><br>
+                            <button type="button" id="produto7" onclick="addCarrinho('T-short - Branca Bordada Com Borboletas', document.getElementById('qtd7').value, 25.90, 'imagens/produto7.jpeg', 7)">Adicionar ao Carrinho</button><br>
+                        </li>
+                        <li>
+                            <span>T-short - Preta Bordada Com Flores</span>
+                            <span>R$ 25.90</span>
+                            <img src="imagens/produto8.jpeg" alt="Blusa">
+                            Quantidade: <input type="number" value="1" min="1" max="10" id="qtd8"><br>
+                            <button onclick="adicionarProduto('T-short - Preta Bordada Com Flores', 'Código 00008', 25.90, 'imagens/produto8.jpeg')">Comprar</button><br>
+                            <button type="button" id="produto8" onclick="addCarrinho('T-short - Preta Bordada Com Flores', document.getElementById('qtd8').value, 25.90, 'imagens/produto8.jpeg', 8)">Adicionar ao Carrinho</button><br>
+                        </li>
+                        <li>
+                            <span>T-short - Rosa Bordada Gratidão com Flores</span>
+                            <span>R$ 25.90</span>
+                            <img src="imagens/produto9.jpeg" alt="Blusa">
+                            Quantidade: <input type="number" value="1" min="1" max="10" id="qtd9"><br>
+                            <button onclick="adicionarProduto('T-short - Rosa Bordada Gratidão com Flores', 'Código 00009', 25.90, 'imagens/produto9.jpeg')">Comprar</button><br>
+                            <button type="button" id="produto9" onclick="addCarrinho('T-short - Rosa Bordada Gratidão com Flores', document.getElementById('qtd9').value, 25.90, 'imagens/produto9.jpeg', 9)">Adicionar ao Carrinho</button><br>
+                        </li>
+                        <li>
+                            <span>T-short - Branca Bordada Com Asas</span>
+                            <span>R$ 25.90</span>
+                            <img src="imagens/produto10.jpeg" alt="Blusa">
+                            Quantidade: <input type="number" value="1" min="1" max="10" id="qtd10"><br>
+                            <button onclick="adicionarProduto('T-short - Branca Bordada Com Asas', 'Código 00010', 25.90, 'imagens/produto10.jpeg')">Comprar</button><br>
+                            <button type="button" id="produto10" onclick="addCarrinho('T-short - Branca Bordada Com Asas', document.getElementById('qtd10').value, 25.90, 'imagens/produto10.jpeg', 10)">Adicionar ao Carrinho</button><br>
+                        </li>
+                        <li>
+                            <span>T-short - Preta Bordada Coração Elegante</span>
+                            <span>R$ 25.90</span>
+                            <img src="imagens/produto11.jpeg" alt="Blusa">
+                            Quantidade: <input type="number" value="1" min="1" max="10" id="qtd11"><br>
+                            <button onclick="adicionarProduto('T-short - Preta Bordada Coração Elegante', 'Código 00011', 25.90, 'imagens/produto11.jpeg')">Comprar</button><br>
+                            <button type="button" id="produto11" onclick="addCarrinho('T-short - Preta Bordada Coração Elegante', document.getElementById('qtd11').value, 25.90, 'imagens/produto11.jpeg', 11)">Adicionar ao Carrinho</button><br>
+                        </li>
+                        <li>
+                            <span>T-short - Branca Bordada Como Flores</span>
+                            <span>R$ 25.90</span>
+                            <img src="imagens/produto12.jpeg" alt="Blusa">
+                            Quantidade: <input type="number" value="1" min="1" max="10" id="qtd12"><br>
+                            <button onclick="adicionarProduto('T-short - Branca Bordada Como Flores', 'Código 00012', 25.90, 'imagens/produto12.jpeg')">Comprar</button><br>
+                            <button type="button" id="produto12" onclick="addCarrinho('T-short - Branca Bordada Como Flores', document.getElementById('qtd12').value, 25.90, 'imagens/produto12.jpeg', 12)">Adicionar ao Carrinho</button><br>
+                        </li>
+                        <li>
+                            <span>T-short - Laranja Verão</span>
+                            <span>R$ 25.90</span>
+                            <img src="imagens/produto13.jpeg" alt="Blusa">
+                            Quantidade: <input type="number" value="1" min="1" max="10" id="qtd13"><br>
+                            <button onclick="adicionarProduto('T-short - Laranja Verão', 'Código 00013', 25.90, 'imagens/produto13.jpeg')">Comprar</button><br>
+                            <button type="button" id="produto13" onclick="addCarrinho('T-short - Laranja Verão', document.getElementById('qtd13').value, 25.90, 'imagens/produto13.jpeg', 13)">Adicionar ao Carrinho</button><br>
+                        </li>
+                        <li>
+                            <span>T-short - Bordada Dourada</span>
+                            <span>R$ 25.90</span>
+                            <img src="imagens/produto14.jpeg" alt="Blusa">
+                            Quantidade: <input type="number" value="1" min="1" max="10" id="qtd14"><br>
+                            <button onclick="adicionarProduto('T-short - Bordada Dourada', 'Código 00014', 25.90, 'imagens/produto14.jpeg')">Comprar</button><br>
+                            <button type="button" id="produto14" onclick="addCarrinho('T-short - Bordada Dourada', document.getElementById('qtd14').value, 25.90, 'imagens/produto14.jpeg', 14)">Adicionar ao Carrinho</button><br>
+                        </li>
+                        <li>
+                            <span>T-short - Azul Clara Bordada INauencer</span>
+                            <span>R$ 25.90</span>
+                            <img src="imagens/produto15.jpeg" alt="Blusa">
+                            Quantidade: <input type="number" value="1" min="1" max="10" id="qtd15"><br>
+                            <button onclick="adicionarProduto('T-short - Azul Clara Bordada INauencer', 'Código 00015', 25.90, 'imagens/produto15.jpeg')">Comprar</button><br>
+                            <button type="button" id="produto15" onclick="addCarrinho('T-short - Azul Clara Bordada INauencer', document.getElementById('qtd15').value, 25.90, 'imagens/produto15.jpeg', 15)">Adicionar ao Carrinho</button><br>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <main>
+            <div id="carrinho-tab" onclick="toggleCarrinho()">
+              
+                <img src="imagens/carrinho.png" alt="Carrinho">
+            </div>
+        
+            <div id="carrinho">
+                <h2>Carrinho de Compras</h2>
+                <ul id="listar_carrinho"></ul>
+                <p>Total no Carrinho: R$ <span id="total-carrinho">0.00</span></p>
+                <div id="paypal-button-container"></div>
+            </div>
+        
+    </main>
+
+<footer>
+<div class="footer-container">
+    <div class="footer-section">
+        <h3>Bordados a Mão</h3>
+        <ul>
+            <li><a href="#">Empresa</a></li>
+            <li><a href="#">Como comprar</a></li>
+            <li><a href="#">Envio</a></li>
+            <li><a href="#">Formas de Pagamento</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="footer-section">
+        <h3>ATENDIMENTO</h3>
+        <ul>
+            <li>(62)3088-2588</li>
+            <li>(62)9524-2445</li>
+            <li><a href="mailto:atendimento@bordadosamao.com.br">atendimento@bordadosamao.com.br</a></li>
+            <li>Atendimento de segunda a sexta - 7h às 16:30h</li>
+        </ul>
+    </div>
+
+    <div class="footer-section">
+        <h3>FORMAS DE PAGAMENTO</h3>
+        <ul>
+            <li>Cartão Visa - Vindi</li>
+            <li>Cartão MasterCard - Vindi</li>
+            <li>Cartão Amex - Vindi</li>
+        </ul>
+    </div>
+
+    <div class="footer-section">
+        <h3>COMPRE COM SEGURANÇA</h3>
+        <p>Loja Protegida</p>
+    </div>
+</div>
+
+<div class="copyright">
+    <p>&copy; atendimento@bordadosamao.com.br</p>
+</div>
+</footer>
+
+
+    <script src="https://www.paypal.com/sdk/js?client-id=AXTUsh_VKLZ6hXjQ500lcaKAOKIQ7CKFM-yohSFecpPlVNIj4Z-S8O3nSG2U3O7dDoB33rxN5YpMJtVb"></script>
+    <script src="main3.js"></script>
+    <script src="slides.js"></script>
+</body>
+</html>
